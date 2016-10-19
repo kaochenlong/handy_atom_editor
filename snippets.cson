@@ -1,0 +1,49 @@
+'.source.js':
+  'Debugger':
+    'prefix': '_db'
+    'body': 'debugger;'
+  'Import React Component and Protypes':
+    'prefix': '_import react component and proptypes'
+    'body': "import React, { Component, Proptypes } from 'react-native';"
+  'Import StyleSheet':
+    'prefix': '_import stylesheet'
+    'body': "import { StyleSheet } from 'react-native';"
+  'Class':
+    'prefix': '_class'
+    'body': """
+       class ${1:ClassName} extends Component {
+
+       }
+    """
+  'Constructor':
+    'prefix': '_init'
+    'body': """
+       constructor(props) {
+         super(props);
+         $1
+       }
+    """
+  'Constructor':
+    'prefix': '_render'
+    'body': """
+       render = () => {
+         $1
+       }
+    """
+  'Export Default':
+    'prefix': '_export'
+    'body': 'export default ${1:moduleName};'
+  'Proptypes':
+    'prefix': '_prop'
+    'body': """
+       static propTypes = {
+         $1
+       }
+    """
+  'Default Proptypes':
+    'prefix': '_default_prop'
+    'body': """
+       static defaultProps = {
+         $1
+       };
+    """

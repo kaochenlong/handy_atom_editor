@@ -1,0 +1,8 @@
+'.platform-darwin atom-workspace':
+  'F2': 'nuclide-file-tree:toggle'
+
+'.platform-darwin':
+  'ctrl-p': 'fuzzy-finder:toggle-file-finder'
+
+'.platform-darwin':
+  'shift-F shift-F': 'project-find:show'
