@@ -2,9 +2,9 @@
   'Debugger':
     'prefix': '_db'
     'body': 'debugger;'
-  'Import React Component and Protypes':
+  'Import React Component and ProTypes':
     'prefix': '_import react component and proptypes'
-    'body': "import React, { Component, Proptypes } from 'react-native';"
+    'body': "import React, { Component, PropTypes } from 'react';"
   'Import StyleSheet':
     'prefix': '_import stylesheet'
     'body': "import { StyleSheet } from 'react-native';"
@@ -33,14 +33,34 @@
   'Export Default':
     'prefix': '_export'
     'body': 'export default ${1:moduleName};'
-  'Proptypes':
+  'PropTypes':
     'prefix': '_prop'
     'body': """
        static propTypes = {
          $1
        }
     """
-  'Default Proptypes':
+  'String PropTypes':
+    'prefix': '_prop string'
+    'body': """
+       ${1:prop}: PropTypes.string,$2
+    """
+  'Object PropTypes':
+    'prefix': '_prop object'
+    'body': """
+       ${1:prop}: PropTypes.object,$2
+    """
+  'Function PropTypes':
+    'prefix': '_prop function'
+    'body': """
+       ${1:prop}: PropTypes.func,$2
+    """
+  'Boolean PropTypes':
+    'prefix': '_prop boolean'
+    'body': """
+       ${1:prop}: PropTypes.bool,$2
+    """
+  'Default PropTypes':
     'prefix': '_default_prop'
     'body': """
        static defaultProps = {
