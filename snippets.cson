@@ -45,6 +45,11 @@
     'body': """
        ${1:prop}: PropTypes.string,$2
     """
+  'Number PropTypes':
+    'prefix': '_prop number'
+    'body': """
+       ${1:prop}: PropTypes.number,$2
+    """
   'Object PropTypes':
     'prefix': '_prop object'
     'body': """
