@@ -6,3 +6,6 @@
 
 '.platform-darwin':
   'shift-F shift-F': 'project-find:show'
+
+'.platform-darwin atom-text-editor':
+  'ctrl-n': 'find-and-replace:select-next'
