@@ -65,6 +65,11 @@
     'body': """
        ${1:prop}: PropTypes.bool,$2
     """
+  'Array PropTypes':
+    'prefix': '_prop array'
+    'body': """
+       ${1:prop}: PropTypes.array,$2
+    """
   'Default PropTypes':
     'prefix': '_default_prop'
     'body': """
