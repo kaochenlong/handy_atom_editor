@@ -72,3 +72,52 @@
          $1
        };
     """
+  'Component Will Mount':
+    'prefix': '_component willmount'
+    'body': """
+       componentWillMount = () => {
+         $1
+       }
+    """
+  'Component Will Unmount':
+    'prefix': '_component will unmount'
+    'body': """
+       componentWillUnmount = () => {
+         $1
+       }
+    """
+  'Component Did Mount':
+    'prefix': '_component did mount'
+    'body': """
+       componentDidMount = () => {
+         $1
+       }
+    """
+  'Component Will Receive Props':
+    'prefix': '_component will receive props'
+    'body': """
+       componentWillReceiveProps = (nextProps) => {
+         $1
+       }
+    """
+  'Component Should Update':
+    'prefix': '_component should update'
+    'body': """
+       shouldComponentUpdate = (nextProps, nextState) => {
+         $1
+       }
+    """
+  'Component Will Update':
+    'prefix': '_component will update'
+    'body': """
+       componentWillUpdate = (nextProps, nextState) => {
+         $1
+       }
+    """
+  'Component Did Update':
+    'prefix': '_component did update'
+    'body': """
+       componentDidUpdate = (prevProps, prevState) => {
+         $1
+       }
+    """
