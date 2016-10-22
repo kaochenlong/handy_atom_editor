@@ -15,7 +15,7 @@
 
        }
     """
-  'Constructor':
+  'Class Constructor':
     'prefix': '_init'
     'body': """
        constructor(props) {
@@ -71,14 +71,14 @@
        ${1:prop}: PropTypes.array,$2
     """
   'Default PropTypes':
-    'prefix': '_default_prop'
+    'prefix': '_default props'
     'body': """
        static defaultProps = {
          $1
        };
     """
   'Component Will Mount':
-    'prefix': '_component willmount'
+    'prefix': '_component will mount'
     'body': """
        componentWillMount = () => {
          $1
@@ -125,4 +125,11 @@
        componentDidUpdate = (prevProps, prevState) => {
          $1
        }
+    """
+  'Provides Module':
+    'prefix': '_provides module'
+    'body': """
+      /*
+       * @providesmodule ${1:moduleName}
+       */
     """
