@@ -130,6 +130,6 @@
     'prefix': '_provides module'
     'body': """
       /*
-       * @providesmodule ${1:moduleName}
+       * @providesModule ${1:moduleName}
        */
     """
